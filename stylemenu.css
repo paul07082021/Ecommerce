@@ -1,0 +1,565 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+body {
+    font-family: sans-serif;
+    overflow-y: scroll;
+}
+
+.data {
+    height: 100vh;
+    margin-left: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+header {
+    background: black;
+    line-height: 80px;
+    position: fixed;
+    width: 100%;
+}
+
+label  {
+    line-height: 100px;
+    font-size: 30px;
+    color: white;
+    font-weight: 200;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+header .logo{
+    position: absolute;
+    height: 60px;
+    margin-top: 15px;
+}
+
+header ul {
+    float: right;
+    margin-right: 20px;
+}
+
+header ul .search-icon{
+    height: 35px;
+    width: 240px;
+    border-radius: 5px;
+}
+header ul .search-icon input{
+    height: 35px;
+    width: 200px;
+    border:none;
+    outline: none;
+    padding: 0 10px;
+    font-size: 15px;
+    border-radius:5px 0 0 5px;
+    padding-top:5px;
+}
+header ul .search-icon .icon{
+    height: 35.7px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: white;
+    cursor: pointer;
+    margin:0;
+    color:black;
+    border-radius:0 5px 5px 0px;
+    
+}
+header ul .search-icon .icon:hover{
+    background-color: orange;
+    color: white;
+}
+header ul li {
+    display: inline-block; 
+    line-height: 75px;
+    margin: 0 10px;
+}
+header ul .user-icon .icon-user{
+    height: 100%;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: white;
+    cursor: pointer;
+    margin:0;
+    color:black;
+    border-radius:20px 20px 20px 20px;
+}
+header ul .cart-icon .icon-cart{
+    height: 100%;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: white;
+    cursor: pointer;
+    color:black;
+    border-radius:20px 20px 20px 20px;
+    padding: 6px -6px;
+    margin-left:20px;
+    
+}
+header ul .cart-icon{
+    height: 36.6px;
+    margin-left: -16px;
+    width: 40px;
+    border-radius: 5px;
+    
+}
+header ul .user-icon{
+    height: 36.6px;
+    margin-left: 12px;
+    width: 40px;
+    border-radius: 5px;
+    
+}
+header ul .cart-icon .icon-cart:hover{
+    background-color: orange;
+    color: white;
+}
+header ul .user-icon .icon-user:hover{
+    background-color: orange;
+    color: white;
+}
+
+header ul li a {
+    display: inline-block; 
+    color: white;
+    font-size: 22px;
+    padding: 6px 0px;
+    font-weight: 600;
+}
+.side-menu .logo{
+    margin-left:5px;
+    margin-top:-55px;
+    height: 80px;
+}
+
+.side-menu {
+    position: fixed;
+    background: black;
+    width: 340px;
+    height:100%;
+    margin-top: 80px;
+    margin-left: 0;
+}
+.side-menu .active {
+    display: block;
+    line-height: 60px;
+    transition: 0.5s;
+}
+.side-menu .best{
+    margin-left: 53px;
+    margin-right: 116px;
+}
+.side-menu .pizza{
+    margin-left: 13px;
+    margin-right: 117px;
+}
+.side-menu .noodles{
+    margin-right: 117px;
+}
+.side-menu .rice{
+    margin-right: 125px;
+}
+.side-menu .snacks{
+    margin-right: 103px;
+}
+.side-menu .drinks{
+    margin-right: 125px;
+    margin-left: 19px;
+}
+.side-menu .chicken{
+    margin-right: 90px;
+}
+
+.side-menu .active:hover {
+    background: #EC7B1C;
+    padding-left: 20px;
+}
+.side-menu span {
+    font-size: 20px;
+    margin-left: 10px;
+    color: rgb(255, 255, 255);
+}
+.side-menu i {
+    font-size: 20px;
+    margin-left: 20px;
+    color: rgb(255, 255, 255);
+}
+
+header .menu-bar {
+    float: right;
+    margin-top: 20px;
+    display: none;
+    margin-right: 20px;
+    
+}
+.side-menu .content {
+    padding-top: 35px;
+}
+#menu {
+    display: none;
+}
+
+
+ .bestsellers img{
+   
+    height: 400px;
+    width: 400px;
+    padding-left: 50px;
+    padding-top: 90px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:360px){
+    header{
+        line-height: 120px;
+    }
+    
+    header .menu-bar{
+        margin-top: -100px;
+        margin-right: 15px;
+    }
+}
+@media (max-width:380px){
+    
+    
+    header ul .cart-icon .icon-cart{
+        width: 35px;
+        margin-left:30px;
+    }
+    header ul .cart-icon{
+        height: 33px;
+        margin-left: -28px;
+        width: 35px;
+    }
+    header ul .user-icon .icon-user{
+        width: 35px;
+    }
+    header ul .user-icon{
+        height: 33px;
+        margin-left: 21px;
+        width: 35px;
+    }
+
+    
+}
+@media (min-width:650px){
+    header .logo{
+        display: none;
+    }
+    
+}
+@media (max-width:649px){
+    .side-menu .logo{
+        display: none;
+    }
+    header .logo{
+        height:60px;
+    }
+    
+    
+}
+
+@media (min-width:490px){
+    
+    header ul .cart-icon .icon-cart{
+        height: 100%;
+        width: 40px;
+        line-height: 40px;
+        text-align: center;
+        background: white;
+        cursor: pointer;
+        color:black;
+        border-radius:20px 20px 20px 20px;
+        padding: 6px -6px;
+        margin-left:30px;
+        
+    }
+    header ul .cart-icon{
+        height: 36.6px;
+        margin-left: -25px;
+        width: 40px;
+        border-radius: 5px;
+        
+    }
+    header ul .user-icon{
+        height: 36.6px;
+        margin-left: 25px;
+        width: 40px;
+        border-radius: 5px;
+        
+    }
+}
+
+@media only screen and (max-width:800px) {
+    header ul .search-icon .icon{
+        height: 35px;
+    }
+    .side-menu{
+        background-color: rgb(0, 0, 0);
+    }
+    .side-menu a span {
+    font-size: 20px;
+    margin-left: 10px;
+    color: rgb(255, 255, 255);
+    }
+    .side-menu{
+        display: 100px;
+    }
+    .data {
+        margin-left: 100px;
+    }
+    
+}
+@media (max-width:650px) {
+   
+    .data {
+        color:rgb(0, 0, 0);
+    }
+    header{
+        height: 80px;
+    }
+    header .logo{
+        margin-left: -35px;
+    }
+    
+    header ul {
+        display:inline-flexbox;
+        height: 100px;
+        margin-right: 10px;
+        margin-left: -15px;   
+    }
+    
+    header ul .search-icon{
+        height: 39px;
+        width: 140px;
+        background:white;
+        border-radius: 10px;
+        padding: 0;
+        margin: 0;
+       
+    }
+    header ul .search-icon input{
+        width: 100px;
+       
+    }
+    
+    .side-menu {
+        width: 100%;
+        text-align: center;
+        left: 100%;
+        background-color: black;
+        transition: all 0.5s;
+        
+    }
+
+    .side-menu a i {
+        display: none;
+    }
+
+    .side-menu a span {
+        display: block;
+    }
+
+    header .menu-bar {
+        display: block;
+        padding: 6px;
+        padding-left: 50px;
+    }
+    .side-menu .best{
+        margin:0;
+    }
+    .side-menu .pizza{
+        margin:0;
+    }
+    .side-menu .noodles{
+        margin:0;
+    }
+    .side-menu .rice{
+        margin:0;
+    }
+    .side-menu .snacks{
+        margin:0;
+    }
+    .side-menu .drinks{
+        margin:0;
+    }
+    .side-menu .chicken{
+        margin:0;
+    }
+}
+
+#menu:checked~.side-menu {
+    left: 0;
+}
+
+@media (max-width:800px) {
+    header ul li {
+        margin: 0 8px;
+    }
+    header ul .search-icon{
+        height: 35px;
+    }
+    header ul .search-icon input{
+        height: 34.5px;
+    }
+    
+}
+
+
+@media (max-height:200px) {
+    header .logo{
+        margin-left: -40px;
+    }
+    header ul li {
+        margin: 0 3px;
+        
+    }
+    header ul li a{
+        font-size: 15px;
+    }
+    header ul .search-icon{
+        height: 25px;
+        width: 130px;
+        margin:0;
+        padding: 0;
+    }
+    header ul .search-icon input{
+        height: 23px;
+        width: 100px;
+    }
+    header ul .search-icon .icon{
+        height: 100%;
+        width: 30px;
+    }
+    .side-menu .best{
+        margin:0;
+    }
+    .side-menu .pizza{
+        margin:0;
+    }
+    .side-menu .noodles{
+        margin:0;
+    }
+    .side-menu .rice{
+        margin:0;
+    }
+    .side-menu .snacks{
+        margin:0;
+    }
+    .side-menu .drinks{
+        margin:0;
+    }
+    .side-menu .chicken{
+        margin:0;
+    }
+    
+}
+/*
+header ul .search-icon input{
+    height: 34.5px;
+    width: 200px;
+    border:none;
+    outline: none;
+    padding: 0 10px;
+    font-size: 15px;
+    border-radius:5px 0 0 5px;
+    padding-top:5px;
+}
+header ul .search-icon .icon{
+    height: 100%;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: white;
+    cursor: pointer;
+    margin:0;
+    color:black;
+    border-radius:1px 5px 5px 1px;
+    
+}
+header .menu-bar {
+        border-radius: 20px 20px 20px 20px;
+        border-color: white;
+}
+
+
+header .menu-bar {
+        margin-top: 25px;
+        padding: 5px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        font-size: 18px;
+        color:black;
+        background-color: white;
+        border-radius: 20px 20px 20px 20px;
+        width: 27px;
+        height: 25px;
+    }
+
+    @media (max-height:800px) {
+  
+    header ul li {
+        margin: 0 3px;
+    }
+    .side-menu{
+        overflow: scroll;
+    }
+    
+    .side-menu .best{
+        margin-left: 54px;
+        margin-right: 99px;
+    }
+    .side-menu .pizza{
+        margin-left: 13px;
+        margin-right: 102px;
+    }
+    .side-menu .noodles{
+        margin-right: 100px;
+    }
+    .side-menu .rice{
+        margin-right: 108px;
+    }
+    .side-menu .snacks{
+        margin-right: 85px;
+    }
+    .side-menu .drinks{
+        margin-right: 110px;
+        margin-left: 19px;
+    }
+    .side-menu .chicken{
+        margin-right: 73px;
+    } 
+}

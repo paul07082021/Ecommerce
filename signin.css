@@ -1,0 +1,310 @@
+.login-container{
+    margin-top: 220px;
+    margin-bottom: 5%;
+}
+.login-form-1{
+    padding: 5%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+.login-form-2{
+    padding: 5%;
+    background-color: black;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+.login-form-1 h3{
+    text-align: center;
+    color: #333;
+}
+.login-form-2 h3{
+    text-align: center;
+    color: white;
+}
+
+.login-container form{
+    padding: 10%;
+    height: 500px;
+}
+.btnSubmit
+{
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    border: none;
+    cursor: pointer;
+}
+.login-form-1 .btnSubmit{
+    font-weight: 600;
+    color: white;
+    background-color: black;
+    width: 140px;
+}
+.login-form-2 .btnSubmit{
+    font-weight: 600;
+    color:black;
+    background-color: white;
+    width: 140px;
+}
+.login-form-1 .btnSubmit:hover,
+.login-form-2 .btnSubmit:hover{
+    background-color:blue;
+    color:black;
+}
+.login-form-1 .ForgetPwd{
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+}
+.login-container form{
+    padding: 10%;
+}
+label{
+    color: white;
+    text-align: justify;
+}
+label a{
+    text-decoration: underline;
+    font-weight: bold;
+}
+header{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 22px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+    background-image: url(neto.jpg);
+}
+header .logo{
+    position: absolute;
+    height: 80px;
+    margin-top: -5px;
+}
+header ul{
+    position: relative;
+    display: flex;
+}
+header ul li{
+    list-style: none;
+}
+header ul li a{
+    display: inline-block;
+    margin-left: 50px;
+    color: white;
+    font-size: 20px;
+}
+header ul li a:hover{
+    color:orange;
+}
+    header ul .menu-icon .icon-menu{
+        height: 100%;
+        width: 40px;
+        line-height:40px;
+        text-align: center;
+        background: white;
+        cursor: pointer;
+        margin:0;
+        color:black;
+        border-radius:20px 20px 20px 20px;
+        padding: 6px 0px;
+    }
+    header ul .cart-icon .icon-cart{
+        height: 100%;
+        width: 40px;
+        line-height: 40px;
+        text-align: center;
+        background: white;
+        cursor: pointer;
+        color:black;
+        border-radius:20px 20px 20px 20px;
+        padding: 6px 0px;
+        margin-left:2px;
+        
+    }
+    header ul .cart-icon{
+        height: 36.6px;
+        width: 40px;
+        border-radius: 5px;
+    }
+    header ul .menu-icon{
+        height: 36.6px;
+        margin-left: 20px;
+        width: 40px;
+        border-radius: 5px;
+        margin-right: -33px;
+        
+    }
+    header ul .cart-icon .icon-cart:hover{
+        background-color: orange;
+        color: white;
+    }
+    header ul .menu-icon .icon-menu:hover{
+        background-color: orange;
+        color: white;
+    }
+@media (min-width:1000px) {
+    header .logo{
+        margin-left: -50px;
+    }
+    .login-container{
+        margin-top: 100px;
+        margin-bottom: 5%;
+    }
+    .login-form-1{
+        height:380px;
+    }
+}
+@media (min-width:900px) {
+    .login-container{
+        margin-top: 140px;
+        margin-bottom: 5%;
+    }
+    .login-form-1{
+        height:661px;
+    }
+}
+@media (min-width:822px) {
+    header{
+        padding: 0px 100px;
+        width: 100%; 
+    }
+    header .logo{
+        margin-left: -70px;
+        margin-top: -20px;
+    }
+    header ul {
+    margin-right: -40px;
+    padding-top:25px;
+    }
+    header ul li a{
+        margin-right: -20px;  
+    }
+    .login-container{
+        margin-top: 130px;
+        margin-bottom: 5%;
+    }
+    .login-form-1{
+        height:660px
+    }
+}
+@media (min-width:765px) {
+    header{
+        padding: 0px 100px;
+        width: 100%; 
+    }
+    header .logo{
+        margin-left: -70px;
+        margin-top: -20px;
+    }
+    header ul {
+    margin-right: -40px;
+    padding-top:25px;
+    }
+    header ul li a{
+        margin-right: -20px; 
+    }
+    .login-container{
+        margin-top: 140px;
+        margin-bottom: 5%;
+    }
+    .login-form-1{
+        height:661px;
+    }
+}
+
+@media (max-width:700px) {
+    .login-container{
+        margin-top: 150px;
+        margin-bottom: 5%;
+    }
+    .login-form-1{
+        height:661px;
+    }
+}
+@media (min-width:820px) {
+    header{
+        padding: 0px 100px;
+        width: 100%; 
+    }
+    header .logo{
+        margin-left: -70px;
+        margin-top: -20px;
+    }
+    header ul {
+    margin-right: -40px;
+    padding-top:25px;
+    }
+    header ul li a{
+        margin-right: -20px;
+    }
+    .login-container{
+        margin-top: 130px;
+        margin-bottom: 5%;
+    }
+    .login-form-1{
+        height:660px
+    }
+}
+@media(max-width:770px) {
+    header{
+        padding: 0px 100px;
+        width: 100%; 
+    }
+    header .logo{
+        margin-left: -70px;
+        margin-top: -20px;
+    }
+    header ul {
+    margin-right: -40px;
+    padding-top:25px;
+    }
+    header ul li a{
+        margin-right: -20px;
+    }
+    .login-container{
+        margin-top: 130px;
+        margin-bottom: 5%;
+    }
+    .login-form-1{
+        height:330px
+    }
+}
+@media(min-width:1024px) {
+    .login-container{
+        margin-top: 130px;
+        margin-bottom: 5%;
+    }
+    .login-form-1{
+        height:671px;
+    }
+}
+
+/*
+@media (min-width:2048px) {
+    header{
+        padding: 0px 100px;
+        width: 101%; 
+        height: 100px;
+    }
+    header .logo{
+        margin-left: -70px;
+        margin-top: -20px;
+        height: 135px;
+    }
+    header ul {
+    margin-right: -40px;
+    padding-top:25px;
+    }
+    header ul li a{
+        margin-right: 25px;
+    }
+    .login-container{
+        margin-top: 200px;
+        margin-bottom: 5%;
+    }
+    .login-form-1{
+        height:667px;
+    }
+    
+}

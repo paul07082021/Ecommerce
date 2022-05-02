@@ -1,0 +1,293 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+   
+}
+body{
+    background-image: url('bg.jpg');
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: black;
+
+   
+}
+
+
+section{
+    position: relative;
+    width: 95%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+header{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 105%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(neto.jpg);
+}
+header .logo{
+    position: absolute;
+    height: 80px;
+    margin-top: -5px;
+}
+
+.menu-bar ul{
+    position: relative;
+    display: flex;
+}
+
+
+.menu-bar ul li{
+    list-style: none;
+}
+
+.menu-bar ul li a{
+    display: inline-block; 
+    font-weight: 450;
+    margin-left: 40px;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+
+header ul .search-icon{
+    height: 36.6px;
+    width: 240px;
+    border-radius: 5px;
+    
+}
+header ul .search-icon input{
+    height: 37px;
+    width: 200px;
+    border:none;
+    outline: none;
+    padding:0px 8px;
+    font-size: 15px;
+    border-radius:5px 0 0 5px;
+    padding-top:10px;
+}
+header ul .search-icon .icon{
+    height: 100%;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: white;
+    cursor: pointer;
+    margin:0;
+    color:black;
+    border-radius:1px 5px 5px 1px;
+    
+}
+header ul .search-icon .icon:hover{
+    background-color: orange;
+    color: white;
+}
+
+header ul .user-icon .icon-user{
+    height: 100%;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: white;
+    cursor: pointer;
+    margin:0;
+    color:black;
+    border-radius:20px 20px 20px 20px;
+    
+}
+header ul .menu-icon .icon-menu{
+    height: 100%;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: white;
+    cursor: pointer;
+    margin:0;
+    color:black;
+    border-radius:20px 20px 20px 20px;
+    
+}
+header ul .menu-icon{
+    height: 36.6px;
+    margin-left: 20px;
+    width: 40px;
+    border-radius: 5px;
+    
+}
+header ul .user-icon{
+    height: 36.6px;
+    margin-left: 20px;
+    width: 40px;
+    border-radius: 5px;
+    
+}
+header ul .menu-icon .icon-menu:hover{
+    background-color: orange;
+    color: white;
+}
+header ul .user-icon .icon-user:hover{
+    background-color: orange;
+    color: white;
+}
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .textbox{
+    position: relative;
+    max-width: 800px;
+}
+
+.content .textbox h2{
+    color:rgb(255, 255, 255);
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+
+.content .textbox h2 span{
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+    font-weight: 1000;
+}
+.content .textbox p{
+    color: rgb(255, 255, 255);
+}
+.content .textbox a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #ffffff;
+    color: black;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.content .imgBox{
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: -50px;
+    margin-top: 50px;
+}
+
+.content .imgBox img{
+   width:850px;
+   margin-right: -150px;
+   
+}
+
+@media  (max-width: 991px){
+    section{
+        padding:20px;
+    }
+    header{
+    padding:20px;
+    }
+    header .logo{
+    max-width: 60px;
+    }
+    header ul{
+        display: none;
+    }
+    
+    header ul li a{
+        font-size: 1.5em;
+        margin: 5px 0;
+    }
+    .content{
+        flex-direction: column;
+        margin-top: 100px;
+    }
+    .content .textbox{
+        max-width: 100%;
+    }
+    .content .textbox h2{
+        font-size:2.5em;
+        margin-bottom: 15px;
+    }
+    .content .imgBox{
+        max-width: 100%;
+        justify-content: center;
+    }
+    .content .imgBox img{
+            width: 500px;
+            margin-right: 50px;
+    }
+    }
+    @media (max-width:650px) {
+    header .logo{
+        max-width: 60px;
+        margin-top: -20px;  
+    }
+    .menu-bar ul li a{
+        margin-left: 27px;
+    }
+    .menu-bar ul .search-icon{
+        margin-right: -30px;
+        width: 190px;
+    }
+    .menu-bar ul .search-icon input{
+        width: 130px;
+    }
+    header ul .menu-icon{
+        margin-left: 15px;
+
+        
+    }
+    header ul .user-icon{
+        margin-left: 5px;
+        
+    }
+    }
+    /*
+    @media (min-height:500px) {
+        header .logo{
+            margin-left: 2px;
+            margin-top: -25px;
+            height: 60px;
+        }
+        .menu-bar ul li { 
+            margin-left: -20px;
+        }
+        .menu-bar ul li a{
+            font-size: 20px;
+        }
+        .menu-bar ul .search-icon{
+            height: 27px;
+            width: 130px;
+            padding-left: 0;
+        }
+        .menu-bar ul .search-icon input{
+            height: 34px;
+            width: 100px;
+            padding: 0 6px;
+        }
+        .menu-bar ul .search-icon .icon{
+            height:34px;
+            width: 30px;
+            color:black;
+            background-color: red;
+            margin-top:-11px;
+            padding-top:-10px;
+        }
+    }

@@ -1,0 +1,19 @@
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+       <link rel="stylesheet" href="style.css">
+    <head>
+<body>
+<section>
+    <header>
+            <a href="index.php"><img src ="lo.png"  class="logo"></a>
+            <ul>
+                
+                <li><a href="">Menu</a></li>
+                <li><a href="SignIn.php">Sign In</a></li>
+                <li><a href="index.php"><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i></a></li>
+            </ul>
+    </header>

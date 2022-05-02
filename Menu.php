@@ -1,0 +1,124 @@
+<html>
+<title>Menu</title>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylemenu.css">
+    <link rel="stylesheet" type="text/css" href="productcard.css">
+    <link rel="stylesheet" type="text/css" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.css" />
+    
+</head>
+<body> 
+    <input type="checkbox" id="menu">
+    <header>
+    <label><a href="index.php"><img src ="lo.png"  class="logo"></a></label>
+        <ul>
+            <li class="search-icon"><input type="search" placeholder="Search"><a class ="icon" href=""><i class="fas fa-search"></i></a></li>
+            <li class="cart-icon"><a class ="icon-cart" href="index.php"><i class="fas fa-shopping-cart"></i></a></li>
+            <li class="user-icon"><a class ="icon-user" href="signin.php"><i class="fas fa-user" aria-hidden="true"></i></a></li>
+        </ul> 
+        <label for="menu" class="menu-bar"> <i class="fa fa-bars"></i> </label>
+</header>
+    <div class="side-menu">
+    <div class ="logo-side">
+        <label><a href="index.php"><img src ="lo.png"  class="logo"></a></label>
+    </div>
+        <div class="content">
+         <a class="active" href="#"><span class="best">Best Sellers</span><i class="fa-solid fa-arrow-right-long"></i></a>
+         <a class="active" href="#"><i class="fas fa-pizza-slice"></i><span class="pizza">Pizza Menu</span><i class="fa-solid fa-arrow-right-long"></i></a> 
+         <a class="active" href="#"><i class="fas fa-bowl-rice"></i><span class="noodles">Pasta Menu</span><i class="fa-solid fa-arrow-right-long"></i></a>
+         <a class="active" href="#"><i class="fas fa-bowl-rice"></i></i><span class="rice">Rice Meals</span><i class="fas fa-arrow-right-long"></i></a> 
+         <a class="active" href="#"><i class="fas fa-bowl-rice"></i><span class="snacks">Snacks Menu</span><i class="fa-solid fa-arrow-right-long"></i></a>
+         <a class="active" href="#"><i class="fas fa-bowl-rice"></i><span class="chicken">Chicken Wings</span><i class="fa-solid fa-arrow-right-long"></i></a>
+         <a class="active" href="#"><i id="glass" class="fas fa-glass-water"></i><span class="drinks">Beverages</span><i class="fa-solid fa-arrow-right-long"></i></a>
+        </div>
+    </div>
+    <br><br><br><br><br><br><br>
+   
+    <div class="row">
+  <div class="column">
+    <div class="card"><img src="img16.png"  style="width:100%">
+  <h1>Tailored Jeans</h1>
+  <p class="price">$19.99</p>
+  <p>Some text about the jeans..</p>
+  <p><button><a href="#">Add to Cart</button></p></div>
+  </div>
+
+  <div class="column">
+    <div class="card"><img src="img16.png"  style="width:100%">
+  <h1>Tailored Jeans</h1>
+  <p class="price">$19.99</p>
+  <p>Some text about the jeans..</p>
+  <p><button><a href="#">Add to Cart</button></p></div>
+  </div>
+
+  <div class="column">
+    <div class="card"><img src="img16.png"  style="width:100%">
+  <h1>Tailored Jeans</h1>
+  <p class="price">$19.99</p>
+  <p>Some text about the jeans..</p>
+  <p><button><a href="#">Add to Cart</button></p></div>
+  </div>
+
+  <div class="column">
+    <div class="card"><img src="img16.png"  style="width:100%">
+  <h1>Tailored Jeans</h1>
+  <p class="price">$19.99</p>
+  <p>Some text about the jeans..</p>
+  <p><button><a href="#">Add to Cart</button></p></div>
+  </div>
+</div>
+<br>
+
+
+ 
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
