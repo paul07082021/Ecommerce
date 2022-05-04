@@ -1,5 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
 .login-container{
-    margin-top: 220px;
+    margin-top: 150px;
     margin-bottom: 5%;
 }
 .login-form-1{
@@ -19,7 +27,9 @@
     text-align: center;
     color: white;
 }
-
+.login-form-2 label{
+    font-size: 13px;
+}
 .login-container form{
     padding: 10%;
     height: 500px;
@@ -44,22 +54,77 @@
     background-color: white;
     width: 140px;
 }
-.login-form-1 .btnSubmit:hover,
-.login-form-2 .btnSubmit:hover{
-    background-color:blue;
+.login-form-1 .btnSubmit:hover{
+    background-color:whitesmoke;
     color:black;
+    box-shadow:0 0 3px 0 black;
+}
+.login-form-2 .btnSubmit:hover{
+    background-color:black;
+    color:whitesmoke;
+    box-shadow:0 0 3px 0 white;
 }
 .login-form-1 .ForgetPwd{
     color: black;
     font-weight: 600;
     text-decoration: none;
 }
-.login-container form{
-    padding: 10%;
+.form-control{
+    height: 38px;
+    
+}
+.form-group{
+    position: relative;
+    
+}
+.form-group1{
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.form-group input[type=text],
+.form-group input[type=password],
+.form-group1 input[type=text],
+.form-group1 input[type=password]{
+    padding-left:43px;
+}
+.form-group .fas{
+    position: absolute;
+    width: 40px;
+    background-color: black;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    padding:10px 0px;
+    color:whitesmoke;
+}
+.form-group1 .fas{
+    position: absolute;
+    width: 40px;
+    background-color: white;
+    left: 1;
+    top: 1;
+    bottom: 1;
+    right: 0;
+    padding:10px 2px;
+    color:black;
+}
+
+.form-group input[type=text]:focus + .fas,
+.form-group input[type=password]:focus + .fas{
+    color:black;
+    background: whitesmoke;
+}
+.form-group1 input[type=text]:focus + .fas,
+.form-group1 input[type=password]:focus + .fas{
+    color:whitesmoke;
+    background: black;
 }
 label{
     color: white;
     text-align: justify;
+    margin-bottom: -10px;
 }
 label a{
     text-decoration: underline;
@@ -73,17 +138,20 @@ header{
     padding: 22px 100px;
     display: flex;
     justify-content: space-between;
-    align-items: center;  
-    background-image: url(neto.jpg);
+    align-items: center;
+    background-color: black;  
 }
 header .logo{
     position: absolute;
     height: 80px;
     margin-top: -5px;
+    margin-left: -70px;
 }
 header ul{
     position: relative;
     display: flex;
+    margin-right: -40px;
+    line-height: 55px;
 }
 header ul li{
     list-style: none;
@@ -95,7 +163,10 @@ header ul li a{
     font-size: 20px;
 }
 header ul li a:hover{
-    color:gray;
+    color:orange;
+}
+.login-form-2 .terms a{
+    text-decoration: none;
 }
     header ul .menu-icon .icon-menu{
         height: 100%;
@@ -140,171 +211,23 @@ header ul li a:hover{
         color: white;
     }
     header ul .menu-icon .icon-menu:hover{
-        background-color: gray;
+        background-color: darkgray;
         color: white;
     }
-@media (min-width:1000px) {
-    header .logo{
-        margin-left: -50px;
-    }
-    .login-container{
-        margin-top: 100px;
-        margin-bottom: 5%;
-    }
-    .login-form-1{
-        height:380px;
-    }
-}
-@media (min-width:900px) {
-    .login-container{
-        margin-top: 140px;
-        margin-bottom: 5%;
-    }
-    .login-form-1{
-        height:661px;
-    }
-}
-@media (min-width:822px) {
-    header{
-        padding: 0px 100px;
-        width: 100%; 
-    }
-    header .logo{
-        margin-left: -70px;
-        margin-top: -20px;
-    }
-    header ul {
-    margin-right: -40px;
-    padding-top:25px;
-    }
-    header ul li a{
-        margin-right: -20px;  
-    }
-    .login-container{
-        margin-top: 130px;
-        margin-bottom: 5%;
-    }
-    .login-form-1{
-        height:660px
-    }
-}
-@media (min-width:765px) {
-    header{
-        padding: 0px 100px;
-        width: 100%; 
-    }
-    header .logo{
-        margin-left: -70px;
-        margin-top: -20px;
-    }
-    header ul {
-    margin-right: -40px;
-    padding-top:25px;
-    }
-    header ul li a{
-        margin-right: -20px; 
-    }
-    .login-container{
-        margin-top: 140px;
-        margin-bottom: 5%;
-    }
-    .login-form-1{
-        height:661px;
-    }
-}
 
-@media (max-width:700px) {
-    .login-container{
-        margin-top: 150px;
-        margin-bottom: 5%;
-    }
-    .login-form-1{
-        height:661px;
-    }
-}
-@media (min-width:820px) {
-    header{
-        padding: 0px 100px;
-        width: 100%; 
-    }
-    header .logo{
-        margin-left: -70px;
-        margin-top: -20px;
-    }
-    header ul {
-    margin-right: -40px;
-    padding-top:25px;
-    }
-    header ul li a{
-        margin-right: -20px;
-    }
-    .login-container{
-        margin-top: 130px;
-        margin-bottom: 5%;
-    }
-    .login-form-1{
-        height:660px
-    }
-}
-@media(max-width:770px) {
-    header{
-        padding: 0px 100px;
-        width: 100%; 
-    }
-    header .logo{
-        margin-left: -70px;
-        margin-top: -20px;
-    }
-    header ul {
-    margin-right: -40px;
-    padding-top:25px;
-    }
-    header ul li a{
-        margin-right: -20px;
-    }
-    .login-container{
-        margin-top: 130px;
-        margin-bottom: 5%;
-    }
-    .login-form-1{
-        height:330px
-    }
-}
-@media(min-width:1024px) {
-    .login-container{
-        margin-top: 130px;
-        margin-bottom: 5%;
-    }
-    .login-form-1{
-        height:671px;
-    }
-}
-
-/*
-@media (min-width:2048px) {
-    header{
-        padding: 0px 100px;
-        width: 101%; 
-        height: 100px;
-    }
-    header .logo{
-        margin-left: -70px;
-        margin-top: -20px;
-        height: 135px;
-    }
-    header ul {
-    margin-right: -40px;
-    padding-top:25px;
-    }
-    header ul li a{
-        margin-right: 25px;
-    }
-    .login-container{
-        margin-top: 200px;
-        margin-bottom: 5%;
-    }
-    .login-form-1{
-        height:667px;
-    }
+@media(max-width:1000px) {
     
+    header ul li a{
+        margin-right: -20px;
+    }
+    .login-container{
+        margin-bottom: 5%;
+    }
+    .login-form-1{
+        height:330px;
+        margin-right:1px;
+    }
+    .login-form-2{
+        height:650px;
+    }
 }
