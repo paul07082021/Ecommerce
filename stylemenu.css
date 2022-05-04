@@ -74,7 +74,7 @@ header ul .search-icon .icon{
     
 }
 header ul .search-icon .icon:hover{
-    background-color: orange;
+    background-color: gray;
     color: white;
 }
 header ul li {
@@ -121,11 +121,11 @@ header ul .user-icon{
     
 }
 header ul .cart-icon .icon-cart:hover{
-    background-color: orange;
+    background-color: gray;
     color: white;
 }
 header ul .user-icon .icon-user:hover{
-    background-color: orange;
+    background-color: gray;
     color: white;
 }
 
