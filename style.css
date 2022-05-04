@@ -10,7 +10,7 @@ body{
     background-repeat: no-repeat, repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-color: black;
+    background-color: #191919;
 
    
 }
@@ -25,6 +25,7 @@ section{
     justify-content: space-between;
     align-items: center;
    
+    
 }
 
 header{
@@ -195,6 +196,47 @@ header ul .user-icon .icon-user:hover{
    margin-right: -150px;
    
 }
+
+.secondpage
+{
+    
+    background-color: white;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------- Responsive page --------------*/
 
 @media  (max-width: 991px){
     section{
