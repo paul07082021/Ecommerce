@@ -93,7 +93,7 @@ header ul .search-icon .icon{
     
 }
 header ul .search-icon .icon:hover{
-    background-color: orange;
+    background-color: gray;
     color: white;
 }
 
@@ -136,11 +136,11 @@ header ul .user-icon{
     
 }
 header ul .menu-icon .icon-menu:hover{
-    background-color: orange;
+    background-color: gray;
     color: white;
 }
 header ul .user-icon .icon-user:hover{
-    background-color: orange;
+    background-color: gray;
     color: white;
 }
 .content{
