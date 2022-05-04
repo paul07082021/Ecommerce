@@ -136,11 +136,11 @@ header ul li a:hover{
         
     }
     header ul .cart-icon .icon-cart:hover{
-        background-color: orange;
+        background-color: gray;
         color: white;
     }
     header ul .menu-icon .icon-menu:hover{
-        background-color: orange;
+        background-color: gray;
         color: white;
     }
 @media (min-width:1000px) {
